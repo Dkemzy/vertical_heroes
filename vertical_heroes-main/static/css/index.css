@@ -1,0 +1,125 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* White text color */
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/static/images/') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+/* Logo section styles */
+#logo-section {
+    color: #fff;
+}
+
+/* Home section styles */
+#home {
+    padding: 50px 0;
+    position: relative;
+}
+
+/* Section 1 styles */
+#section1 {
+    padding: 50px 0;
+}
+
+#section1 strong {
+    color: black !important;
+    font-weight: bold;
+}
+
+#section1 h2 {
+    color: #20deeb;
+    text-align: center;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-group-item {
+    color: black !important;
+}
+
+.list-group-item {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.list-group-item img {
+    max-width: 400px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+/* Section 2 styles */
+#section2 {
+    padding: 50px 0;
+}
+
+#section2 h2,
+#section3 h2,
+#section4 h2 {
+    text-align: center;
+}
+
+#section2 h2,
+#section2 h3,
+#section2 h4 {
+    color: #fff;
+}
+
+
+#section2 p.lead {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #1c0101;
+}
+
+/* Section 3 styles */
+#section3 {
+    padding: 50px 0;
+}
+
+#section3 h2 {
+    color: #23cce6;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Section 4 styles */
+#section4 {
+    padding: 50px 0;
+}
+
+#section4 h2,
+#section4 h3 {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+#section4 ul.list-group img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+/* Section 5 styles */

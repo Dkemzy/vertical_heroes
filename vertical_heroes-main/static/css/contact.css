@@ -1,0 +1,46 @@
+/* Add your custom styles for the contact form */
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,157 @@
+.footer {
+  background-color: #24262b;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.block {
+  max-width: 1170px;
+  background-color: #24262b;/* Updated background-color */
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e1e;
+  height: 2px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footer-col h4 img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #eb1313;
+  background-color: #ffffff;
+}
+
+.container .text-muted {
+  color: #ffffff; /* Set text color to white */
+}
+
+.footer p {
+  color: white;
+}
+
+/*@media responsiveness*/
+@media (max-width: 762px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* Mobile responsiveness for icons */
+@media (max-width: 768px) {
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust spacing for smaller screens */
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center the text */
+    display: flex; /* Use flex to control icon and text layout */
+    align-items: center; /* Center vertically */
+    opacity: 100%; /* Initially hide the text */
+    color: #ffffff; /* Set text color to white */
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    opacity: 1; /* Show text on hover */
+}
+
+.social-links a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    color: #ffffff; /* Set icon color to white */
+}
+
+.social-links a:hover {
+    color: #e91e63; /* Change icon color on hover */
+}
+}

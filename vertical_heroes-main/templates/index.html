@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}HOME{% endblock %}
+
+{%block head%}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- Include jQuery -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+    .image-center-fit {
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      max-height: 100vh;
+      margin: auto;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="d-block d-sm-none"> <!-- Visible on mobile devices only -->
+    <img src="{{ url_for('static', filename='images/Backpack_guy.png') }}" class="image-center-fit">
+</div>
+<div class="d-none d-sm-block"> <!-- Visible on desktop devices only -->
+    <img src="{{ url_for('static', filename='images/WEB.png') }}" class="image-center-fit">
+</div>
+<!--
+    <section id="logo-section" class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='images/logo-removebg.png') }}" alt="VERTICAL HEROES" class="img-fluid" style="width: 300px; height: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="my-5">
+        <div class="container">
+            <p class="lead"  style="color:rgb(8, 0, 0)">VERTICAL HEROES is a global creative agency and production company. </p>
+            <p class="lead" style="color:rgb(8, 0, 0)">We are a content creation hub that has a keen eye for talent and a place where our clients and staff have a holistic, mutual and professional growth. </p>
+<p class="lead" style="color:rgb(8, 0, 0)">Our regional office branch is located in Nairobi, Kenya (Africa), and the main Headquaters office is at Amsterdam, Netherlands(Europe). We work with international clients, to create branded videos/strategies for their social medias. </p>
+        </div>
+    </section>
+
+    <section id="section1" class="bg-light py-5">
+        <div class="container-fluid">
+            <h2 class="text-center mb-4">We're in search of young, talented editors in two distinct areas: </h2>
+            <ul class="list-group">
+                <li class="list-group-item d-flex align-items-center flex-column flex-sm-row">
+                    <div class="flex-shrink-0 mb-3 mb-sm-0 mr-sm-3">
+                        <img src="{{ url_for('static', filename='images/two.jpg') }}" alt="Authorized Distributor" class="img-fluid rounded">
+                    </div>
+                    <div>
+                        <strong>1. Branded Video Editors </strong>
+                        <p class="small text-muted">Experts in crafting high-quality short form videos for European brands. (It’s a plus if you can also help innovating new video ideas and new strategies for the brands).</p>
+                    </div>
+                </li>
+    
+                <li class="list-group-item d-flex align-items-center flex-column flex-sm-row">
+                    <div>
+                        <strong>2. TikTok Faceless Channel Editors </strong>
+                        <p class="small text-muted">Creating engaging/entertaining content for faceless TikTok channels. In niches like: politics, money, music, sports, history, gaming etc and everything that you’re interested in!
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0 mt-3 mt-sm-0 ml-sm-3">
+                        <img src="{{ url_for('static', filename='images/one.jpg') }}" alt="Technical Expertise" class="img-fluid rounded">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="container">
+            <h2 class="mb-4">COMPANY</h2>
+            <h3 style="margin-top:20px;">About us</h3>
+            <p class="lead">VERTICAL HEROES is an impact enterprise that aims to nurture the digital skills of young creatives and exposure to the global digital marketplace through various social and business platforms.</p>
+                
+            <p class="lead">We boast as the best talent hub that will take will meet your CTR (Click Through Rate) goals like number of impressions, engagements such as comments, likes and shares for the month/year as an organisation. With its holistic approach, you as an editor have the best work life balance environment and a place you are guaranteed to grow professsionally as well as get exposed to global digital market.</p>
+            <h3 style="margin-top:20px; text-align:center;">Services</h3>
+            <h4>Content Consultancy</h4>
+            <p class="lead">We are house team of professional experts with a proven track record in handling matters pertaining to content from an idea to its actualisation. In its actualisation we are with you in each steps with our experts in data interpretation and visualisation more specifically CTR -CLICK THROUGH Rate.</p>
+            <h4>Content Creation</h4>
+            <p class="lead">As a content creation hub we have the best community that has produced the best captivating contents with our editors working for both international clients and inhouse content.</p>
+           </div>
+    </section>
+
+    <section id="section3" class="bg-light py-5">
+        <div class="container d-flex justify-content-center">
+            <div class="text-center">
+                <h2 class="mb-4">CLIENTS WE HAVE WORKED WITH</h2>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">UNILEVER</li>
+                    <li class="list-group-item list-group-item-primary">HEINEKEN</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="container">
+            <h2>SOLUTIONS</h2>
+            <h3 style="margin-top:50px;">VERTICAL HEROES SERVICES</h3>
+            <p style="color:rgb(8, 0, 0)">Vertical Heroes has global collaborations in the global market place.</p>
+
+            <h3 style="margin-top: 50px;">Content Collaboration</h3>
+            <p style="color:rgb(8, 0, 0)">At VERTICAL HEROES, we are the best when it comes content collaboration with our clients and their specifications.</p>
+
+            <h3 style="margin-top:50px;">Editors Hub</h3>
+            <p style="color:rgb(8, 0, 0)">As a content hub and a secure place for editors, you are guaranteed of:</p>
+            <div class="container">
+                <ul class="list-group justify-content-center">
+                    <li class="list-group-item d-flex align-items-center" style="font-weight:bold">
+                        1. Professional Development.
+                    </li>
+                    <li class="list-group-item d-flex align-items-center" style="font-weight:bold">
+                        2. Improve Career Skills.
+                    </li>
+                    <li class="list-group-item d-flex align-items-center" style="font-weight:bold">
+                        3. Continuous developent in Software Skills.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5" class="my-5">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-4" style="color: #0f0000; font-size:20px;">If you are a skilled TikTok Editor based in Nairobi and know prompting:</p>
+                <button onclick="location.href='/contact'" type="button" class="btn btn-primary mb-4">Contact Us</button>
+            </div>
+        </div>
+    </section>    
+    
+    <style>
+        @media (max-width: 767px) {
+            form {
+                text-align: center;
+            }
+        }
+    </style>
+-->
+{% endblock %}
+
